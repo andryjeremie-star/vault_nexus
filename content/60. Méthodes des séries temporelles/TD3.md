@@ -1,4 +1,4 @@
-# TD-TP : Processus $AR(p)$ et $MA(q)$
+z# TD-TP : Processus $AR(p)$ et $MA(q)$
 
 ## Partie 1 : Processus $AR(p)$
 
@@ -462,13 +462,13 @@
 > 
 > Pour chaque processus, déterminer s'il est [[60.2.22. Condition d'inversibilité du MA(q)|inversible]]. Justifier.
 > 
-> *Indication : Résoudre $\Theta(z) = 0$ et vérifier $|z| > 1$.*
+> *Indication : Résoudre $\Theta(z) = 0$ et vérifier $|z| > 1$, ou utiliser les conditions du [[60.2.26. Cas particulier du MA(2)|triangle d'inversibilité du MA(2)]] par [[60.2.27. Dualité AR(p) et MA(q)|dualité]] avec l'$AR(2)$.*
 
 > [!success] Correction détaillée : Exercice 8
 > 
 > Le polynôme de moyenne mobile associé à $X_t = \epsilon_t + \theta_1 \epsilon_{t-1} + \theta_2 \epsilon_{t-2}$ est :
 > $$\Theta(z) = 1 + \theta_1 z + \theta_2 z^2$$
-> Le processus est [[60.2.22. Condition d'inversibilité du MA(q)|inversible]] si et seulement si toutes les racines de $\Theta(z) = 0$ sont de module strictement supérieur à 1 ($|z_i| > 1$). Par dualité avec l'$AR(2)$, cela équivaut aux trois conditions sur les coefficients :
+> Le processus est [[60.2.22. Condition d'inversibilité du MA(q)|inversible]] si et seulement si toutes les racines de $\Theta(z) = 0$ sont de module strictement supérieur à 1 ($|z_i| > 1$). Par [[60.2.27. Dualité AR(p) et MA(q)|dualité]] avec l'$AR(2)$ (voir [[60.2.26. Cas particulier du MA(2)|Cas particulier du MA(2)]] et le [[60.2.19. Cas particulier de l'AR(2) et triangle de stationnarité|triangle de stationnarité]]), cela équivaut aux trois conditions sur les coefficients (triangle d'inversibilité) :
 > 1. $|\theta_2| < 1$
 > 2. $1 + \theta_1 + \theta_2 > 0$
 > 3. $1 - \theta_1 + \theta_2 > 0$
